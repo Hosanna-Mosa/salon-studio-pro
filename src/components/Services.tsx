@@ -1,6 +1,7 @@
 import { Scissors, Sparkles, Palette, Baby, User, Wind } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const services = [
   {
@@ -42,12 +43,7 @@ const services = [
 ];
 
 const Services = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const navigate = useNavigate();
 
   return (
     <section id="services" className="py-20 bg-secondary/30">
@@ -78,7 +74,7 @@ const Services = () => {
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold text-accent">{service.price}</span>
                   <Button
-                    onClick={scrollToContact}
+                    onClick={() => navigate("/booking")}
                     variant="outline"
                     className="border-accent text-accent hover:bg-accent hover:text-primary"
                   >

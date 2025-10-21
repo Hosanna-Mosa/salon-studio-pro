@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -70,7 +72,7 @@ const Navbar = () => {
               Contact
             </button>
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => navigate("/booking")}
               className="bg-accent hover:bg-accent/90 text-primary font-semibold"
             >
               Book Now
@@ -122,7 +124,7 @@ const Navbar = () => {
               </button>
               <div className="px-4">
                 <Button
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => navigate("/booking")}
                   className="w-full bg-accent hover:bg-accent/90 text-primary font-semibold"
                 >
                   Book Now
