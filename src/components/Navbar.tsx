@@ -34,8 +34,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold">
-              <span className={isScrolled ? "text-accent" : "text-accent"}>Salon</span>
-              <span className={isScrolled ? "text-white" : "text-white"}>Studio</span>
+              <span className={isScrolled ? "text-accent" : "text-accent"}>Go</span>
+              <span className={isScrolled ? "text-white" : "text-white"}>Blends</span>
             </h1>
           </div>
 
