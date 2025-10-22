@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-accent">Salon</span>Studio
+              <span className="text-accent">Go</span>blends 
             </h3>
             <p className="text-white/80">
               Professional barbering and styling services where style meets comfort.
