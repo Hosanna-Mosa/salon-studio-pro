@@ -5,22 +5,10 @@ import barber3 from "@/assets/barber-3.jpg";
 
 const barbers = [
   {
-    name: "Raj Kumar",
-    title: "Master Barber",
-    experience: "8 Years Experience",
-    image: barber1,
-  },
-  {
     name: "Amit Sharma",
     title: "Senior Stylist",
-    experience: "6 Years Experience",
+    experience: "",
     image: barber2,
-  },
-  {
-    name: "Vikram Singh",
-    title: "Expert Barber",
-    experience: "5 Years Experience",
-    image: barber3,
   },
 ];
 
